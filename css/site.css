@@ -9,6 +9,13 @@ body {
 	font-family: Open Sans;
 }
 
+a:active, 
+a:link, 
+a:visited,
+a:hover {
+	color: #040316;
+}
+
 .box--red {
 	background: #B30000;
 	height: 90px;
@@ -38,6 +45,34 @@ body {
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	color: #989898;
+}
+
+/* Nav */
+
+.main-nav {
+	text-align: right;
+}
+
+.main-nav a {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 15px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #989898;
+	margin-left: 20px;
+	padding: 5px;
+	transition: color ease-in-out .5s;
+}
+
+.main-nav a:hover {
+	color: #040316;
+}
+
+a.main-nav__active {
+	color: #040316;
 }
 
 /* About */
@@ -139,6 +174,9 @@ body {
 	}
 	.xs-profile-pic {
 		width: 100%;
+	}
+	.xs-main-nav {
+		text-align: left;
 	}
 }
 
