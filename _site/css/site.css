@@ -1,0 +1,182 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background: #fff;
+	color: #040316;
+	font-family: Open Sans;
+}
+
+a:active, 
+a:link, 
+a:visited,
+a:hover {
+	color: #040316;
+}
+
+.box--red {
+	background: #B30000;
+	height: 90px;
+	width: 53px;
+}
+
+/* Top site area */
+
+.site-header {
+	margin-bottom: 100px;
+}
+
+.site-title {
+	font-family: 'Lora', serif;
+	font-weight: lighter;
+	font-size: 36px;
+	line-height: 44px;
+	margin-bottom: 10px;
+}
+
+.site-sub-title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #989898;
+}
+
+/* Nav */
+
+.main-nav {
+	text-align: right;
+}
+
+.main-nav a {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 15px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #989898;
+	margin-left: 20px;
+	padding: 5px;
+	transition: color ease-in-out .5s;
+}
+
+.main-nav a:hover {
+	color: #040316;
+}
+
+a.main-nav__active {
+	color: #040316;
+}
+
+/* About */
+
+.profile-pic {
+	width: 222px;
+}
+
+.about-title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+
+}
+
+.about-text {
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 13px;
+	line-height: 200%;
+}
+
+/* Schedule */
+
+.schedule-header {
+	font-family: Lora;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 27px;
+	text-align: left;
+	margin-bottom: 44px;
+}
+
+.event-date,
+.event-location {
+	text-align: right;
+	margin: 0;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: .4rem;
+	padding-right: 34px;
+}
+
+.event-date {
+	display: inline-block;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: .4rem;
+}
+
+.event-location {
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.event-title {
+	margin: 0;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: left;
+}
+
+.event-info {
+	margin-bottom: 36px;
+}
+
+/* Footer */
+
+.footer-text {
+	text-align: center;
+	color: #989898;
+	font-size: 13px;
+	padding: 20px 0 40px;
+}
+
+.footer-text a {
+	color: #040316;
+	font-weight: lighter;
+	text-decoration: underline;
+}
+
+.footer-text a:hover {
+	text-decoration: none;
+}
+
+/* xs */
+@media only screen and (max-width: 47em) {
+	.xs-site-header {
+		margin-bottom: 10px;
+	}
+	.xs-profile-pic {
+		width: 100%;
+	}
+	.xs-main-nav {
+		text-align: left;
+	}
+}
+
