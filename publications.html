@@ -1,0 +1,15 @@
+---
+layout: default
+title: Publications
+description: Published works by Geshe Graham Losel
+permalink: /publications/index.html
+pageName: Publications
+---
+
+<h2 class="schedule-header">Publications</h2>
+
+	{% for pub in site.publications %}
+   {% unless pub.noindex %}
+      {% include publication-list.html %}
+    {% endunless %}
+	{% endfor %}

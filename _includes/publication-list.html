@@ -1,0 +1,20 @@
+<div class="row middle-xs publications__row">
+  <div class="col-xs-12 
+              col-sm-6 
+              col-md-2">
+      <a href="{{ pub.url }}" class="">
+        <img class="publications__img" src="{{ site.url }}{{ site.images_path }}{{ pub.image_url }}" alt="{{ pub.title }}">
+      </a>
+    </div>   
+  <div class="col-xs-12 
+              col-sm-6 
+              col-md-8">
+    <div class="publications__info">
+      <a href="{{ pub.url }}">
+          <h3 class="publications__title">{{ pub.title }}</h3>
+        </a>
+        <p class="publications__desc">{{ pub.description }}</p>
+        <a class="publications__link" href="{{ pub.url }}">Read more <span class="publications__arrow">&#187;</span></a>
+    </div>
+  </div>
+</div>

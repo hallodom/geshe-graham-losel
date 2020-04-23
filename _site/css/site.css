@@ -22,6 +22,23 @@ a:hover {
 	width: 53px;
 }
 
+.download-button, 
+a.download-button {
+	display: inline-block;
+	background: #B30000;
+	box-sizing: content-box;
+	padding: 20px;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 18px;
+	margin-top: 20px;
+	transition: .3s ease-in-out opacity;
+}
+
+a.download-button:hover {
+	opacity: .85;
+}
+
 /* Top site area */
 
 .site-header {
@@ -146,6 +163,74 @@ a.main-nav__active {
 
 .event-info {
 	margin-bottom: 36px;
+}
+
+/* Publications list */
+
+.publications__row {
+	margin-bottom: 20px;
+	padding: 1rem;
+    padding-top: 2rem;
+    border: 1px solid #efebeb;
+    box-shadow: 5px 5px 10px #efebeb;
+    margin-bottom: 2rem!important;
+}
+
+.publications__title {
+	font-family: Montserrat;
+	font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.publications__img {
+	width: 100%;
+	transition: .3s ease-in-out opacity;
+}
+
+.publications__img:hover {
+	opacity: .6;
+}
+
+.publications__info {
+	padding: 20px;
+}
+
+a.publications__link {
+	color: #B30000;
+}
+
+a.publications__link:hover .publications__arrow  {
+	margin-left: 4px;
+}
+
+.publications__arrow {
+	display: inline-block;
+	transition: .3s ease-in-out all;
+}
+
+/* Publication single */
+
+.publication-single__title {
+	margin-bottom: 20px;
+    line-height: 1.7em;
+}
+
+.publication-single__translated {
+	color: #989898;
+	font-size: 14px;
+	letter-spacing: .07em;
+}
+
+.publication-single__desc {
+	line-height: 1.7em;
+	margin-left: 20px;
+}
+
+.publication-single__img {
+  	width: 100%;
+  	box-shadow: 5px 5px 10px #efebeb;	
 }
 
 /* Footer */
