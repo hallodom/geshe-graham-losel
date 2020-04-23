@@ -6,10 +6,42 @@ permalink: /publications/index.html
 pageName: Publications
 ---
 
-<h2 class="schedule-header">Publications</h2>
+{% for pub in site.publications %}
+		{% if forloop.first %}
+			<h2 class="publications-type-header">Books</h2>
+		{% endif %}
+	{% unless pub.ordained_only %}
+		{% if pub.type == 'book' %}
+	  		{% include publication-list.html %}
+		{% endif %}
+	{% endunless %}
+{% endfor %}
 
-	{% for pub in site.publications %}
-   {% unless pub.noindex %}
-      {% include publication-list.html %}
-    {% endunless %}
-	{% endfor %}
+{% for pub in site.publications %}
+	{% if pub.ordained_only == true %}
+		{% if forloop.first %}
+			<h2 class="publications-type-header">For the Ordained Only</h2>
+		{% endif %}
+		{% include publication-list.html %}
+	{% endif %}
+{% endfor %}
+
+{% for pub in site.publications %}
+		{% if forloop.first %}
+		<div class="row middle-xs center-xs start-sm publications__row">
+			<div class="col-xs-11 
+              col-sm-8 
+              col-md-8">
+				<h2 class="publications-type-header">Shorter Translations</h2>
+				<p>Properly chantable English translations of Tibetan religious verse are still quite rare. Yet I can’t think of a single case of a Sanskrit verse original that was translated into Tibetan without being put into metre. The Tibetans rose to that challenge. In their own Dharma compositions too Tibetans have employed metric verse to powerful effect, all the more so when chanted in a prayer assembly with many people gathered together. </p>
+
+				<p>The shorter verse translations offered here are all chantable, or readable to a regular rhythm. In general Tibetan religious verse achieves its intensity by combining the rhythm of poetry with sheer conciseness. In order to approach that level of fine compression, English words that are often shortened by a syllable when spoken are often shortened here in these translations. Words such as the following generally count as two syllables: generous, wandering, suffering, reliance, wavering, realize, chariot (gen’rous, wand’ring etc.) Words such as knower, hour, power, being, count as one syllable (know’r, pow’r etc.) My own Four Seals Chant does not show quite the same level of compression. The simple recordings show one way how the texts can be chanted.</p>
+			</div>
+		</div>
+		{% endif %}
+	{% unless pub.ordained_only %}
+		{% if pub.shorter %}
+	  		{% include publication-list.html %}
+		{% endif %}
+	{% endunless %}
+{% endfor %}

@@ -28,15 +28,21 @@ a.download-button {
 	background: #B30000;
 	box-sizing: content-box;
 	padding: 20px;
-	color: #fff;
+	text-decoration: none !important;
+	color: #fff !important;
 	border-radius: 3px;
 	font-size: 18px;
+	font-weight: normal !important;
 	margin-top: 20px;
 	transition: .3s ease-in-out opacity;
 }
 
 a.download-button:hover {
 	opacity: .85;
+}
+
+a.download-button--secondary {
+	background: #989898;
 }
 
 /* Top site area */
@@ -169,11 +175,20 @@ a.main-nav__active {
 
 .publications__row {
 	margin-bottom: 20px;
-	padding: 1rem;
-    padding-top: 2rem;
-    border: 1px solid #efebeb;
-    box-shadow: 5px 5px 10px #efebeb;
-    margin-bottom: 2rem!important;
+}
+
+.publications__row:last-child {
+	margin-bottom: 40px;
+}
+
+.publications-type-header {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: left;
+	margin: 50px 0 40px;
 }
 
 .publications__title {
@@ -182,10 +197,13 @@ a.main-nav__active {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5em;
+    margin-top: 0;
 }
 
 .publications__img {
-	width: 100%;
+	width: 90%;
+	box-shadow: 4px 4px 10px #E8E6E6, 
+	 	0px 2px 3px #D4D4D4;
 	transition: .3s ease-in-out opacity;
 }
 
@@ -213,8 +231,16 @@ a.publications__link:hover .publications__arrow  {
 /* Publication single */
 
 .publication-single__title {
+	font-family: Montserrat;
 	margin-bottom: 20px;
     line-height: 1.7em;
+}
+
+.publication-single__author {
+	font-family: 'Lora', serif;
+	font-weight: lighter;
+	font-size: 14px;
+	font-style: italic;
 }
 
 .publication-single__translated {
@@ -228,10 +254,28 @@ a.publications__link:hover .publications__arrow  {
 	margin-left: 20px;
 }
 
+.publication-single__desc a {
+	color: #B30000;
+	font-weight: lighter;
+	text-decoration: underline;	
+}
+
+.publication-single__desc a:hover {
+	text-decoration: none;
+}
+
 .publication-single__img {
   	width: 100%;
   	box-shadow: 5px 5px 10px #efebeb;	
 }
+
+a.publication-single__link {
+	color: #B30000;
+	font-weight: lighter;
+	text-decoration: underline;
+}
+
+
 
 /* Footer */
 
