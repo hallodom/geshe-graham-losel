@@ -1,2 +1,13 @@
 name: Geshe Graham Losel
 markdown: kramdown
+url: http://localhost:4000
+# url: https://geshe-graham-losel.com
+
+# collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+images_path: /images/
+files_path: /files/

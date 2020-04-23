@@ -1,0 +1,35 @@
+{% include header.html %}
+
+<a href="../../" class="publications__link"><span class="publications__arrow">&laquo;</span> Back</a>
+<br />
+<br />
+<div class="row top-xs">
+  <div class="col-xs-12 
+              col-sm-6 
+              col-md-3">
+        <img class="publication-single__img" src="{{ site.url }}/images/{{ page.image_url }}" alt="{{ pub.title }}">
+    </div>   
+  <div class="col-xs-11 
+              col-sm-6 
+              col-md-9">
+    <div class="publication-single__desc">
+		<h2 class="publication-single__title">{{ page.title }}</h2>
+		<h3 class="publication-single__author">
+			{% if page.author %}
+				Original author {{ page.author }}
+			{% endif %}	</h3>
+		<h3 class="publication-single__translated">Translated by {{ page.translated_by }}</h3>
+    	
+    	{{ content }}
+
+    	<a href="{{ site.url }}{{ site.files_path }}{{ page.download_url }}" class="download-button">Download Now</a>
+    	
+    	{% if page.download_audio %}
+    		<a href="{{ site.url }}{{ site.files_path }}{{ page.download_audio }}" class="download-button download-button--secondary">Download Audio</a>
+    	{% endif %}
+
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
