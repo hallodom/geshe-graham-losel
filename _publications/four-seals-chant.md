@@ -11,7 +11,7 @@ shorter: true
 author: Graham Woodhouse
  
 published_date: 
-translated_by: 
+translated_by: false
 
 image_url: four-seals-chant.jpg
 download_url: four-seals-chant.pdf

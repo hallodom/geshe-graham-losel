@@ -18,7 +18,7 @@
 			{% if page.author %}
 				Original author {{ page.author }}
 			{% endif %}	</h3>
-		<h3 class="publication-single__translated">Translated by {{ page.translated_by }}</h3>
+		<h3 class="publication-single__translated"> {% if page.translated_by %}Translated by {{ page.translated_by }} {% endif %}</h3>
     	
     	{{ content }}
 
