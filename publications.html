@@ -18,15 +18,6 @@ pageName: Publications
 {% endfor %}
 
 {% for pub in site.publications %}
-	{% if pub.ordained_only == true %}
-		{% if forloop.first %}
-			<h2 class="publications-type-header">For the Ordained Only</h2>
-		{% endif %}
-		{% include publication-list.html %}
-	{% endif %}
-{% endfor %}
-
-{% for pub in site.publications %}
 		{% if forloop.first %}
 		<div class="row middle-xs center-xs start-sm publications__row">
 			<div class="col-xs-11 
@@ -44,4 +35,13 @@ pageName: Publications
 	  		{% include publication-list.html %}
 		{% endif %}
 	{% endunless %}
+{% endfor %}
+
+{% for pub in site.publications %}
+	{% if pub.ordained_only == true %}
+		{% if forloop.first %}
+			<h2 class="publications-type-header">For the Ordained Only</h2>
+		{% endif %}
+		{% include publication-list.html %}
+	{% endif %}
 {% endfor %}

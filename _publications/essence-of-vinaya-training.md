@@ -3,18 +3,17 @@ layout: publication-single
 permalink: /publications/book/:path/
 noindex: true
 
-title: The Essence of the Vinaya Ocean and The Namtse Dengma Getsul Training
-description: Translated by Geshe Graham Woodhouse. Dharamsala, India - Institute of Buddhist Dialectics, 2009
+title: The Essence of the Vinaya Ocean and The Namtse Dengma Getsul Training by Tsongkhapa
+description: Tsongkapa's analysis of the getsul's training with concise delineations of each of the vows
 type: book
 ordained_only: true
-author: Je Tsongkhapa
  
 published_date: 
-translated_by: Geshe Graham Woodhouse. Dharamsala, India - Institute of Buddhist Dialectics, 2009
+translated_by: Translated and annotated by Geshe Graham Woodhouse
 
 
 image_url: essence-of-vinaya-training.jpg
-download_url: essence-of-vinaya-training.pdf
 
 ---
 
+Restricted to the ordained only. They can obtain copies from the Director, International Mahayana Institute director@imisangha.org

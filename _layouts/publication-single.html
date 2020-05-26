@@ -22,16 +22,17 @@
     	
     	{{ content }}
       
-      {% if page.buy %}
-      	<a href="{{ page.download_url }}" class="download-button">Purchase</a>
-      {% else %}
-        <a href="{{ site.url }}{{ site.files_path }}{{ page.download_url }}" class="download-button">Download Now</a>
+      {% if page.ordained_only != true %}
+        {% if page.buy %}
+        	<a href="{{ page.download_url }}" class="download-button">Purchase</a>
+        {% else %}
+          <a href="{{ site.url }}{{ site.files_path }}{{ page.download_url }}" class="download-button">Download Now</a>
+        {% endif %}
+      	
+      	{% if page.download_audio %}
+      		<a href="{{ site.url }}{{ site.files_path }}{{ page.download_audio }}" class="download-button download-button--secondary">Download Audio</a>
+      	{% endif %}
       {% endif %}
-    	
-    	{% if page.download_audio %}
-    		<a href="{{ site.url }}{{ site.files_path }}{{ page.download_audio }}" class="download-button download-button--secondary">Download Audio</a>
-    	{% endif %}
-
     </div>
   </div>
 </div>
