@@ -21,8 +21,12 @@
 		<h3 class="publication-single__translated"> {% if page.translated_by %}Translated by {{ page.translated_by }} {% endif %}</h3>
     	
     	{{ content }}
-
-    	<a href="{{ site.url }}{{ site.files_path }}{{ page.download_url }}" class="download-button">Download Now</a>
+      
+      {% if page.buy %}
+      	<a href="{{ page.download_url }}" class="download-button">Purchase</a>
+      {% else %}
+        <a href="{{ site.url }}{{ site.files_path }}{{ page.download_url }}" class="download-button">Download Now</a>
+      {% endif %}
     	
     	{% if page.download_audio %}
     		<a href="{{ site.url }}{{ site.files_path }}{{ page.download_audio }}" class="download-button download-button--secondary">Download Audio</a>

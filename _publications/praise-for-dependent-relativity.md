@@ -3,14 +3,14 @@ layout: publication-single
 permalink: /publications/poem/:path/
 noindex: false
 
-title: Tsongkhapa’s Praise for Dependent Relativity
+title: Praise for Dependent Relativity - Verses
 description: "Tsongkhapa wrote Praise for Dependent Relativity on the morning that he first developed the wisdom realizing the final view."
 type: poem
 ordained_only: false
 shorter: true
  
 published_date: 
-translated_by: Lobsang Gyatso and Graham Woodhouse, Wisdom Publications.
+translated_by: Graham Woodhouse
 
 image_url: praise-for-dependent-relativity.jpg
 download_url: praise-for-dependent-relativity.pdf
