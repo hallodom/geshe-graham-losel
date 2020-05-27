@@ -3,14 +3,13 @@ layout: publication-single
 permalink: /publications/book/:path/
 noindex: false
 
-title: A Glowing Light of Scripture and Reasoning, Lamp Illuminating the Essentials of the Four Seals that Proclaim the View
+title: A Glowing Light of Scripture and Reasoning, Lamp Illuminating the Essentials of the Four Seals that Proclaim the View, original author Gen Lamrimpa Ngawang Phuntsok
 description: Four key issues in Buddhist philosophy, impermanence, suffering, emptiness and nirvana, are critically examined by Gen Lamrimpa.
 type: book
 ordained_only: false
  
 published_date: 
-author: Gen Lamrimpa Ngawang Phuntsok
-translated_by: by Geshe Graham Woodhouse with introductory verses. Bodhicitta Land, 2019
+translated_by: Geshe Graham Woodhouse with introductory verses. Bodhicitta Land, 2019
 
 image_url: a-glowing-scripture-and-reasoning.jpg
 download_url: a-glowing-scripture-and-reasoning.pdf

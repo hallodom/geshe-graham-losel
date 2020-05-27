@@ -20,6 +20,13 @@ a:hover {
 	background: #B30000;
 	height: 90px;
 	width: 53px;
+	display: block;
+	transition: .3s ease-in-out background;
+	padding: 0;
+}
+
+.box--red:hover {
+	background: #8E0000;
 }
 
 .download-button, 

@@ -3,7 +3,7 @@ layout: publication-single
 permalink: /publications/books/:path/
 noindex: true
 
-title: "Gelong's Training in Brief, author: His Holiness the Dalai Lama"
+title: "Gelong's Training in Brief, author His Holiness the XIVth Dalai Lama"
 description: Pithy advice on the fully ordained life and concise delineations of each of the gelong's vows.
 
 type: book

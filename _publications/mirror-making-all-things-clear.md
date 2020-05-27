@@ -2,7 +2,7 @@
 layout: publication-single
 permalink: /publications/book/:path/
 
-title: A Mirror Making All Things Clear, A Presentation of Signs and Reasonings
+title: A Mirror Making All Things Clear, A Presentation of Signs and Reasonings, original author Geshe Tsultrim Namgyel
 description: An introductory textbook in the Drepung Loseling study programme.
 published_date: false
 image_url: a-mirror-making-all-things-clear.jpg

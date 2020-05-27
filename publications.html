@@ -40,7 +40,13 @@ pageName: Publications
 {% for pub in site.publications %}
 	{% if pub.ordained_only == true %}
 		{% if forloop.first %}
-			<h2 class="publications-type-header">For the Ordained Only</h2>
+			<div class="row middle-xs center-xs start-sm publications__row">
+			<div class="col-xs-11 
+              col-sm-8 
+              col-md-8">
+				<h2 class="publications-type-header">For the Ordained Only</h2>
+				<p>Restricted to the fully ordained only. They can obtain copies from the Director, International Mahayana Institute, director@imisangha.org</p>
+			</div>
 		{% endif %}
 		{% include publication-list.html %}
 	{% endif %}
