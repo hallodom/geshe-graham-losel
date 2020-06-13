@@ -15,7 +15,7 @@ translated_by: false
 
 image_url: four-seals-chant.jpg
 download_url: four-seals-chant.pdf
-download_audio: four-seals-chant.wma
+download_audio: four-seals-chant.m4v
 
 ---
 
