@@ -140,6 +140,7 @@ a.main-nav__active {
 }
 
 .event-date,
+.event-time,
 .event-location {
 	text-align: right;
 	margin: 0;
@@ -160,6 +161,15 @@ a.main-nav__active {
 	margin-bottom: .4rem;
 }
 
+.event-time {
+	display: inline-block;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: .4rem;
+}
+
 .event-location {
 	font-weight: normal;
 	font-size: 13px;
@@ -172,6 +182,10 @@ a.main-nav__active {
 	font-size: 15px;
 	line-height: 22px;
 	text-align: left;
+}
+
+.event-title + .event-title {
+	margin-bottom: 36px
 }
 
 .event-info {
