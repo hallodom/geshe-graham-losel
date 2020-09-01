@@ -6,7 +6,7 @@ noindex: true
 title: "Gelong's Training in Brief, author His Holiness the XIVth Dalai Lama"
 description: Pithy advice on the fully ordained life and concise delineations of each of the gelong's vows.
 
-type: book
+type: fully-ordained
 ordained_only: true
  
 published_date: 
@@ -17,4 +17,4 @@ image_url: a-gelongs-training-in-brief.jpg
 
 ---
 
-Restricted to the fully ordained only. They can obtain copies from the Director, International Mahayana Institute, director@imisangha.org.
+Restricted to the fully ordained only. They can obtain copies from the Director, International Mahayana Institute, <a href="mailto:director@imisangha.org">director@imisangha.org</a>.
