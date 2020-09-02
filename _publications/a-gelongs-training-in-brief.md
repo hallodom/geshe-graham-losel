@@ -1,6 +1,6 @@
 ---
 layout: publication-single
-permalink: /publications/books/:path/
+permalink: /publications/book/:path/
 noindex: true
 
 title: "Gelong's Training in Brief, author His Holiness the XIVth Dalai Lama"
