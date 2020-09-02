@@ -28,20 +28,41 @@ pageName: Publications
 			</div>
 		</div>
 		{% endif %}
+
 		{% if pub.shorter %}
 	  		{% include publication-list.html %}
 		{% endif %}
+
+{% endfor %}
+
+{% for pub in site.publications %}
+	{% if forloop.first %}
+		<div class="row middle-xs center-xs start-sm publications__row">
+			<div class="col-xs-11 
+              col-sm-8 
+              col-md-8">
+				<h2 class="publications-type-sub-header">Miscellaneous</h2>
+				<p>A collection of brief verse translations.</p>
+			</div>
+		</div>
+	{% endif %}
+
+	{% if pub.type == 'miscellaneous' %}
+  		{% include publication-list.html %}
+	{% endif %}
+
 {% endfor %}
 
 {% for pub in site.publications %}
 	{% if pub.type == 'fully-ordained' %}
 		{% if forloop.first %}
 			<div class="row middle-xs center-xs start-sm publications__row">
-			<div class="col-xs-11 
-              col-sm-8 
-              col-md-8">
-				<h2 class="publications-type-header">For Fully Ordained Only</h2>
-				<p>Restricted to the fully ordained only. They can obtain copies from the Director, International Mahayana Institute, <a href="mailto:director@imisangha.org">director@imisangha.org</a></p>
+				<div class="col-xs-11 
+	              col-sm-8 
+	              col-md-8">
+					<h2 class="publications-type-header">For Fully Ordained Only</h2>
+					<p>Restricted to the fully ordained only. They can obtain copies from the Director, International Mahayana Institute, <a href="mailto:director@imisangha.org">director@imisangha.org</a></p>
+				</div>
 			</div>
 		{% endif %}
 		{% include publication-list.html %}

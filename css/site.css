@@ -212,6 +212,16 @@ a.main-nav__active {
 	margin: 50px 0 40px;
 }
 
+.publications-type-sub-header {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 27px;
+	text-align: left;
+	margin: 40px 0 20px;
+}
+
 .publications__title {
 	font-family: Montserrat;
 	font-style: normal;
