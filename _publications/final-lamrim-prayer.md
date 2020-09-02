@@ -3,8 +3,8 @@ layout: publication-single
 permalink: /publications/poem/:path/
 noindex: false
 
-title: Hundred Gods of Ganden
-description: Lama Tsongkhapa Guru Yoga. With this prayer receive direct blessings from the great master six hundred years after his passing.
+title: Final Lamrim Prayer
+description: A dedication prayer very popular with Tibetans, often chanted at the end of His Holiness the Dalai Lama's teachings.
 type: miscellaneous
 
 author: 
@@ -12,10 +12,12 @@ author:
 published_date: 
 translated_by: false
 
-image_url: hundred-gods-of-ganden.jpg
-download_url: hundred-gods-of-ganden.pdf
-download_audio: hundred-gods-of-ganden.mp3
+image_url: final-lamrim-prayer.jpg
+download_url: final-lamrim-prayer.pdf
+download_audio: final-lamrim-prayer.mp3
 
 ---
 
-Lama Tsongkhapa Guru Yoga. With this prayer receive direct blessings from the great master six hundred years after his passing.
+A dedication prayer very popular with Tibetans, often chanted at the end of His Holiness the Dalai Lama's teachings.
+
+A Czech translation is also [available to download here](/files/ZaverLamRim.pdf).
