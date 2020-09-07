@@ -3,9 +3,10 @@ layout: publication-single
 permalink: /publications/poem/:path/
 noindex: false
 
-title: Hundreds of Gods of Ganden
-description: ama Tsongkhapa Guru Yoga. With this prayer receive direct blessings from the great master six hundred years after his passing.
-type: miscellaneous
+title: Hundred Gods of Ganden
+description: Lama Tsongkhapa Guru Yoga. With this prayer receive direct blessings from the great master six hundred years after his passing.
+type: poem
+shorter: true
 
 author: 
  
@@ -18,4 +19,4 @@ download_audio: hundred-gods-of-ganden.mp3
 
 ---
 
-ama Tsongkhapa Guru Yoga. With this prayer receive direct blessings from the great master six hundred years after his passing.
+Lama Tsongkhapa Guru Yoga. With this prayer receive direct blessings from the great master six hundred years after his passing.
