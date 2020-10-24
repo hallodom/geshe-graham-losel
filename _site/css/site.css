@@ -314,7 +314,11 @@ a.publication-single__link {
 	text-align: center;
 	color: #989898;
 	font-size: 13px;
-	padding: 20px 0 40px;
+	margin: 20px 0 10px;
+}
+
+.footer-text:last-child {
+	margin-bottom: 40px;
 }
 
 .footer-text a {
@@ -325,6 +329,10 @@ a.publication-single__link {
 
 .footer-text a:hover {
 	text-decoration: none;
+}
+
+a.dontate-link {
+	color: #B30000;
 }
 
 /* xs */
