@@ -52,6 +52,11 @@ a.download-button--secondary {
 	background: #989898;
 }
 
+.pdf {
+	background: #C4C4C4;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+}
+
 /* Top site area */
 
 .site-header {
@@ -125,6 +130,13 @@ a.main-nav__active {
 	font-weight: lighter;
 	font-size: 13px;
 	line-height: 200%;
+}
+
+.page-text {
+	font-family: Montserrat;
+	font-style: normal;
+	line-height: 1.7em;
+	text-align: left;
 }
 
 /* Schedule */
@@ -283,6 +295,7 @@ a.publications__link:hover .publications__arrow  {
 .publication-single__desc {
 	line-height: 1.7em;
 	margin-left: 20px;
+	text-align: left;
 }
 
 .publication-single__desc a {
@@ -337,6 +350,9 @@ a.dontate-link {
 
 /* xs */
 @media only screen and (max-width: 47em) {
+	.main-nav a {
+		display: block;
+	}
 	.xs-site-header {
 		margin-bottom: 10px;
 	}
