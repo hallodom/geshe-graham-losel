@@ -4,7 +4,7 @@ permalink: /publications/poem/:path/
 noindex: false
 
 title: Refuge & Bodhichitta
-description: Refuge & Bodhichitta English translation
+description: Refuge & Bodhichitta English translation.
 type: miscellaneous
 
 author: 
