@@ -18,4 +18,4 @@ noindex: false
 
 ---
 
-Tsongkhapa set out all the stages of the path to enlightenment extremely clearly and methodically in detailed prose works that originated the very popular lam rim genre of Tibetan Buddhist literature. This poem is the longest of his pithy verse summaries of the path. Memorable refrain.
+Tsongkhapa set out all the stages of the path to enlightenment extremely clearly and methodically in detailed prose works that originated the very popular lam rim genre of Tibetan Buddhist literature. This poem is the longest of his pithy verse summaries of the path. Memorable refrain. <a class="publication-single__link" title="Czech translation of the stages of the path to enlightenment" href="{{ site.url }}/files/song-of-the-stages-of-the-path-czech.pdf">Czech translation available to download here.</a>
