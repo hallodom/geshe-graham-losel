@@ -4,7 +4,7 @@ permalink: /publications/poem/:path/
 noindex: false
 
 title: Refuge & Bodhichitta
-description: Refuge & Bodhichitta English translation.
+description: I have collected several versions of the Refuge & Bodhicitta prayer and given them all a chantable English form.
 type: miscellaneous
 
 author: 
@@ -18,4 +18,4 @@ download_audio:
 
 ---
 
-Refuge & Bodhichitta English translation grouped by the number of syllables each prayer contains. 
+I have collected several versions of the Refuge & Bodhicitta prayer and given them all a chantable English form. It is good to chant the Tibetan. Why not the English as well?

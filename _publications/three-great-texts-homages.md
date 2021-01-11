@@ -4,7 +4,7 @@ permalink: /publications/poem/:path/
 noindex: false
 
 title: Three Great Texts Homages
-description: Three homages by Arya Nagarjuna, Lord Maitreya and Master Dharmakirti. 
+description: Classic Indian Buddhist texts often begin with a verse of homage in which the author bows down before his chosen object of devotion.
 type: miscellaneous
 
 author: 
@@ -18,4 +18,4 @@ download_audio:
 
 ---
 
-Three homages by Arya Nagarjuna, Lord Maitreya and Master Dharmakirti. 
+Classic Indian Buddhist texts often begin with a verse of homage in which the author bows down before his chosen object of devotion, seeking inspiration for his endeavours. The three texts here are studied by all traditions of Tibetan Buddhism and have a wide, enduring fame. Their homages are often chanted at the beginning of Buddhist teachings in the Tibetan style.
