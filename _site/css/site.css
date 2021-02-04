@@ -154,6 +154,7 @@ a.main-nav__active {
 .event-date,
 .event-time,
 .event-location {
+	display: block;
 	text-align: right;
 	margin: 0;
 	font-style: normal;
@@ -165,7 +166,7 @@ a.main-nav__active {
 }
 
 .event-date {
-	display: inline-block;
+	display: block;
 	font-family: Montserrat;
 	font-weight: bold;
 	font-size: 14px;
