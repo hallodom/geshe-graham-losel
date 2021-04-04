@@ -82,6 +82,17 @@ a.download-button--secondary {
 	color: #989898;
 }
 
+/* Youtube icon */
+
+.youtube-link {
+	display: inline-block;
+	width: 26px;
+}
+
+.youtube-link__icon {
+	width: inherit;
+}
+
 /* Nav */
 
 .main-nav {
