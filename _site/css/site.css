@@ -358,6 +358,10 @@ a.publication-single__link {
 
 /* Footer */
 
+.footer {
+	margin-top: 40px;
+}
+
 .footer-text {
 	text-align: center;
 	color: #989898;
