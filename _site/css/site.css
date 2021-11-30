@@ -206,6 +206,7 @@ a.main-nav__active {
 	font-size: 15px;
 	line-height: 22px;
 	text-align: left;
+	margin-bottom: 36px;
 }
 
 .event-title + .event-title {
