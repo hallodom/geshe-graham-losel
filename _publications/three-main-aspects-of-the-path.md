@@ -14,7 +14,7 @@ translated_by: Graham Woodhouse
 
 image_url: three-main-aspects-of-the-path.jpg
 download_url: ThreeMainAspectsofthePath6thJune2022Website.pdf
-download_audio: ThreeMainAspectsofthePath.m4v
+download_audio: ThreeMainAspectsofthePath.m4a
 
 ---
 
