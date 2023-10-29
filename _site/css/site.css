@@ -409,4 +409,8 @@ a.dontate-link {
   .xs-main-nav {
     text-align: left;
   }
+  .schedule-header,
+  .event-title {
+    text-align: right;
+  }
 }
