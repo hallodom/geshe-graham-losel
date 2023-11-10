@@ -1,6 +1,6 @@
 ---
 layout: publication-single
-title: Arya Nāgãrjuna's Fundamental Stanzas on the Middle Way - Chapter 7
+title: Arya Nāgārjuna's Fundamental Stanzas on the Middle Way - Chapter 7
 description: "Chapter 7 - Examination of Arising, Lasting and Destruction"
 published_date: 9 November 2023
 image_url: nagarjuna-chapter-seven.jpg
