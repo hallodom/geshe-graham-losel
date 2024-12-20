@@ -273,11 +273,13 @@ a.main-nav__active {
 .publications__img {
   width: 90%;
   box-shadow: 4px 4px 10px #e8e6e6, 0px 2px 3px #d4d4d4;
-  transition: 0.3s ease-in-out opacity;
+  transition: 0.2s ease-in-out all;
+  transform: scale(1);
 }
 
 .publications__img:hover {
-  opacity: 0.6;
+  opacity: 0.85;
+  transform: scale(1.1);
 }
 
 .publications__info {
