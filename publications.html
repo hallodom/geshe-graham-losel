@@ -34,6 +34,17 @@ pageName: Publications
 <div class="publications-container publications-container--grid">
   <!-- List View (Current Layout) -->
   <div class="publications-list">
+    <!-- Personal Poems First -->
+    {% for pub in site.publications %} {% if pub.type == 'personal-poems' %}
+    <div class="row middle-xs center-xs start-sm publications__row">
+      <div class="col-xs-11 col-sm-8 col-md-8">
+        <h2 class="publications-type-header">Personal Poems</h2>
+        <p>A collection of personal Buddhist-inspired poetry.</p>
+      </div>
+    </div>
+    {% include publication-list.html %} {% endif %} {% endfor %}
+
+    <!-- Rest of the sections -->
     {% for pub in site.publications %} {% if forloop.first %}
     <h2 class="publications-type-header">Books</h2>
     {% endif %} {% if pub.type == 'book' %} {% include publication-list.html %}
@@ -102,19 +113,34 @@ pageName: Publications
         </p>
       </div>
     </div>
-    {% include publication-list.html %} {% endif %} {% endfor %} {% for pub in
-    site.publications %} {% if pub.type == 'personal-poems' %}
-    <div class="row middle-xs center-xs start-sm publications__row">
-      <div class="col-xs-11 col-sm-8 col-md-8">
-        <h2 class="publications-type-header">Personal Poems</h2>
-        <p>A collection of personal Buddhist-inspired poetry.</p>
-      </div>
-    </div>
     {% include publication-list.html %} {% endif %} {% endfor %}
   </div>
 
   <!-- Grid View (New Layout) -->
   <div class="publications-grid">
+    <!-- Personal Poems First -->
+    {% if site.publications | where: "type", "personal-poems" | size > 0 %}
+    <h2 class="publications-type-header">Personal Poems</h2>
+    <div class="row">
+      {% for pub in site.publications %} {% if pub.type == 'personal-poems' %}
+      <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
+        <a
+          href="{{ site.url }}{{ pub.url }}"
+          class="publications-grid__link"
+          target="_blank"
+        >
+          <img
+            src="{{ site.images_path }}{{ pub.image_url }}"
+            alt="{{ pub.title }}"
+            class="publications__img"
+          />
+          <h3 class="publications-grid__title">{{ pub.title }}</h3>
+        </a>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+    {% endif %}
+
     <!-- Books -->
     {% if site.publications | where: "type", "book" | size > 0 %}
     <h2 class="publications-type-header">Books</h2>
@@ -200,29 +226,6 @@ pageName: Publications
         <a href="{{ site.url }}{{ pub.url }}" class="publications-grid__link">
           <img
             src="{{ site.url }}{{ site.images_path }}{{ pub.image_url }}"
-            alt="{{ pub.title }}"
-            class="publications__img"
-          />
-          <h3 class="publications-grid__title">{{ pub.title }}</h3>
-        </a>
-      </div>
-      {% endif %} {% endfor %}
-    </div>
-    {% endif %}
-
-    <!-- Personal Poems -->
-    {% if site.publications | where: "type", "personal-poems" | size > 0 %}
-    <h2 class="publications-type-header">Personal Poems</h2>
-    <div class="row">
-      {% for pub in site.publications %} {% if pub.type == 'personal-poems' %}
-      <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
-        <a
-          href="{{ site.url }}{{ pub.url }}"
-          class="publications-grid__link"
-          target="_blank"
-        >
-          <img
-            src="{{ site.images_path }}{{ pub.image_url }}"
             alt="{{ pub.title }}"
             class="publications__img"
           />
