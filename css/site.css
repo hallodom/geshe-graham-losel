@@ -11,9 +11,13 @@ body {
 
 a:active,
 a:link,
-a:visited,
-a:hover {
+a:visited {
   color: #040316;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b30000;
 }
 
 .box--red {
