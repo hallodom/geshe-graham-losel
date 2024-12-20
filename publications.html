@@ -106,8 +106,11 @@ pageName: Publications
 
   <!-- Grid View (New Layout) -->
   <div class="publications-grid">
+    <!-- Books -->
+    {% if site.publications | where: "type", "book" | size > 0 %}
+    <h2 class="publications-type-header">Books</h2>
     <div class="row">
-      {% for pub in site.publications %}
+      {% for pub in site.publications %} {% if pub.type == 'book' %}
       <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
         <a href="{{ site.url }}{{ pub.url }}" class="publications-grid__link">
           <img
@@ -118,8 +121,85 @@ pageName: Publications
           <h3 class="publications-grid__title">{{ pub.title }}</h3>
         </a>
       </div>
-      {% endfor %}
+      {% endif %} {% endfor %}
     </div>
+    {% endif %}
+
+    <!-- Shorter Translations -->
+    {% if site.publications | where: "shorter", true | size > 0 %}
+    <h2 class="publications-type-header">Shorter Translations</h2>
+    <div class="row">
+      {% for pub in site.publications %} {% if pub.shorter %}
+      <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
+        <a href="{{ site.url }}{{ pub.url }}" class="publications-grid__link">
+          <img
+            src="{{ site.url }}{{ site.images_path }}{{ pub.image_url }}"
+            alt="{{ pub.title }}"
+            class="publications__img"
+          />
+          <h3 class="publications-grid__title">{{ pub.title }}</h3>
+        </a>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Miscellaneous -->
+    {% if site.publications | where: "type", "miscellaneous" | size > 0 %}
+    <h2 class="publications-type-header">Miscellaneous</h2>
+    <div class="row">
+      {% for pub in site.publications %} {% if pub.type == 'miscellaneous' %}
+      <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
+        <a href="{{ site.url }}{{ pub.url }}" class="publications-grid__link">
+          <img
+            src="{{ site.url }}{{ site.images_path }}{{ pub.image_url }}"
+            alt="{{ pub.title }}"
+            class="publications__img"
+          />
+          <h3 class="publications-grid__title">{{ pub.title }}</h3>
+        </a>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- For Fully Ordained Only -->
+    {% if site.publications | where: "type", "fully-ordained" | size > 0 %}
+    <h2 class="publications-type-header">For Fully Ordained Only</h2>
+    <div class="row">
+      {% for pub in site.publications %} {% if pub.type == 'fully-ordained' %}
+      <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
+        <a href="{{ site.url }}{{ pub.url }}" class="publications-grid__link">
+          <img
+            src="{{ site.url }}{{ site.images_path }}{{ pub.image_url }}"
+            alt="{{ pub.title }}"
+            class="publications__img"
+          />
+          <h3 class="publications-grid__title">{{ pub.title }}</h3>
+        </a>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- For Ordained Only -->
+    {% if site.publications | where: "type", "ordained" | size > 0 %}
+    <h2 class="publications-type-header">For Ordained Only</h2>
+    <div class="row">
+      {% for pub in site.publications %} {% if pub.type == 'ordained' %}
+      <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
+        <a href="{{ site.url }}{{ pub.url }}" class="publications-grid__link">
+          <img
+            src="{{ site.url }}{{ site.images_path }}{{ pub.image_url }}"
+            alt="{{ pub.title }}"
+            class="publications__img"
+          />
+          <h3 class="publications-grid__title">{{ pub.title }}</h3>
+        </a>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </div>
 
