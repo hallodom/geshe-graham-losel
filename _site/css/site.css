@@ -420,6 +420,34 @@ a.dontate-link {
     text-align: right;
   }
 }
+/* View Toggle Buttons */
+.view-toggle__btn {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.view-toggle__btn:hover {
+  opacity: 1;
+  background: #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view-toggle__btn--active {
+  opacity: 1;
+  background: #fff;
+  border-color: #b30000;
+  color: #b30000;
+  box-shadow: 0 1px 3px rgba(179, 0, 0, 0.2);
+}
+
+.view-toggle__btn--active:hover {
+  background: #fff;
+}
 
 /* View Toggle */
 .view-toggle {
