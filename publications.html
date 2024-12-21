@@ -124,13 +124,9 @@ pageName: Publications
     <div class="row">
       {% for pub in site.publications %} {% if pub.type == 'personal-poems' %}
       <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
-        <a
-          href="{{ site.url }}{{ pub.url }}"
-          class="publications-grid__link"
-          target="_blank"
-        >
+        <a href="{{ site.url }}{{ pub.url }}" class="publications-grid__link">
           <img
-            src="{{ site.images_path }}{{ pub.image_url }}"
+            src="{{ site.url }}{{ site.images_path }}{{ pub.image_url }}"
             alt="{{ pub.title }}"
             class="publications__img"
           />
