@@ -11,9 +11,13 @@ body {
 
 a:active,
 a:link,
-a:visited,
-a:hover {
+a:visited {
   color: #040316;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b30000;
 }
 
 .box--red {
@@ -269,11 +273,13 @@ a.main-nav__active {
 .publications__img {
   width: 90%;
   box-shadow: 4px 4px 10px #e8e6e6, 0px 2px 3px #d4d4d4;
-  transition: 0.3s ease-in-out opacity;
+  transition: 0.2s ease-in-out all;
+  transform: scale(1);
 }
 
 .publications__img:hover {
-  opacity: 0.6;
+  opacity: 0.85;
+  transform: scale(1.1);
 }
 
 .publications__info {
@@ -413,4 +419,98 @@ a.dontate-link {
   .event-title {
     text-align: right;
   }
+}
+/* View Toggle Buttons */
+.view-toggle__btn {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.view-toggle__btn:hover {
+  opacity: 1;
+  background: #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view-toggle__btn--active {
+  opacity: 1;
+  background: #fff;
+  border-color: #b30000;
+  color: #b30000;
+  box-shadow: 0 1px 3px rgba(179, 0, 0, 0.2);
+}
+
+.view-toggle__btn--active:hover {
+  background: #fff;
+}
+
+/* View Toggle */
+.view-toggle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.view-toggle__btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.view-toggle__btn:hover {
+  opacity: 0.8;
+}
+
+.view-toggle__btn--active {
+  opacity: 1;
+}
+
+.view-toggle__btn svg {
+  fill: currentColor;
+}
+
+/* Grid View */
+.publications-container--list .publications-grid {
+  display: none;
+}
+
+.publications-container--grid .publications-list {
+  display: none;
+}
+
+.publications-grid {
+  margin-top: 40px;
+}
+
+.publications-grid__item {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.publications-grid__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.publications-grid__title {
+  font-family: Montserrat;
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+/* Enhance existing image hover effect for grid view */
+.publications-grid__link:hover .publications__img {
+  transform: scale(1.03);
+  opacity: 0.9;
 }
