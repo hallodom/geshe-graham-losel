@@ -120,7 +120,7 @@ pageName: Publications
   <div class="publications-grid">
     <!-- Personal Poems First -->
     {% if site.publications | where: "type", "personal-poems" | size > 0 %}
-    <h2 class="publications-type-header">Personal Poems</h2>
+    <h2 class="publications-type-header">Poems</h2>
     <div class="row">
       {% for pub in site.publications %} {% if pub.type == 'personal-poems' %}
       <div class="col-xs-12 col-sm-6 col-md-4 publications-grid__item">
