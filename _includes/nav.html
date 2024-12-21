@@ -1,12 +1,25 @@
 <!-- Main navigation -->
 
-<div class="col-xs-12
-            col-sm-10
-            col-md-8">
-            <nav class="main-nav xs-main-nav">
-            	<a class="{% if page.pageName == 'index' %} main-nav__active {% endif %}" href="/">Teaching Schedule</a>
-            	<a class="{% if page.pageName == 'GoFundMe' %} main-nav__active {% endif %}" href="/gofundme-campaign">Campaign</a>
-            	<a class="{% if page.pageName == 'Publications' %} main-nav__active {% endif %}" href="/publications">Publications</a>
-                <a class="{% if page.pageName == 'Recordings' %} main-nav__active {% endif %}" href="/recordings">Recordings</a>
-            </nav>
+<div class="col-xs-12 col-sm-10 col-md-8">
+  <nav class="main-nav xs-main-nav">
+    <a
+      class="{% if page.pageName == 'index' %} main-nav__active {% endif %}"
+      href="/"
+    >
+      Teaching Schedule
+    </a>
+    <!-- <a class="{% if page.pageName == 'GoFundMe' %} main-nav__active {% endif %}" href="/gofundme-campaign">Campaign</a> -->
+    <a
+      class="{% if page.pageName == 'Publications' %} main-nav__active {% endif %}"
+      href="/publications"
+    >
+      Publications
+    </a>
+    <a
+      class="{% if page.pageName == 'Recordings' %} main-nav__active {% endif %}"
+      href="/recordings"
+    >
+      Recordings
+    </a>
+  </nav>
 </div>
