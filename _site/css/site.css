@@ -211,7 +211,7 @@ a.main-nav__active {
   font-size: 15px;
   line-height: 22px;
   text-align: left;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
 }
 
 .event-title a {
@@ -224,6 +224,14 @@ a.main-nav__active {
 }
 
 .event-title + .event-title {
+  margin-bottom: 16px;
+}
+
+.event-description {
+  font-size: 13px;
+  line-height: 200%;
+  text-align: left;
+  margin: 0;
   margin-bottom: 36px;
 }
 
@@ -418,6 +426,10 @@ a.dontate-link {
   .schedule-header,
   .event-title {
     text-align: right;
+  }
+  .event-description {
+    font-size: 13px !important;
+    text-align: right !important;
   }
 }
 /* View Toggle Buttons */
