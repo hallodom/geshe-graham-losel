@@ -227,6 +227,15 @@ a.main-nav__active {
   margin-bottom: 36px;
 }
 
+.event-description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 180%;
+  text-align: left;
+  color: #555;
+  margin-bottom: 36px;
+}
+
 .event-info {
   margin-bottom: 36px;
 }
@@ -416,7 +425,8 @@ a.dontate-link {
     text-align: left;
   }
   .schedule-header,
-  .event-title {
+  .event-title,
+  .event-description {
     text-align: right;
   }
 }
